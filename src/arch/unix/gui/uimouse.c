@@ -71,7 +71,7 @@ UI_MENU_DEFINE_TOGGLE(Mouse)
 
 ui_menu_entry_t mouse_submenu[] = {
     { N_("Enable mouse grab"), UI_MENU_TYPE_TICK,
-      (ui_callback_t)toggle_Mouse, NULL, NULL, KEYSYM_m, UI_HOTMOD_META },
+      (ui_callback_t)toggle_Mouse, NULL, NULL, KEYSYM_g, UI_HOTMOD_META },
     { N_("Mouse type"), UI_MENU_TYPE_NORMAL,
       NULL, NULL, mousetype_submenu },
     { N_("Mouse port"), UI_MENU_TYPE_NORMAL,
@@ -81,7 +81,7 @@ ui_menu_entry_t mouse_submenu[] = {
 
 ui_menu_entry_t mouse_vic20_submenu[] = {
     { N_("Enable paddles"), UI_MENU_TYPE_TICK,
-      (ui_callback_t)toggle_Mouse, NULL, NULL, KEYSYM_m, UI_HOTMOD_META },
+      (ui_callback_t)toggle_Mouse, NULL, NULL, KEYSYM_g, UI_HOTMOD_META },
     { NULL }
 };
 
