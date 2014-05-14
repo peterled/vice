@@ -68,7 +68,7 @@ static UI_CALLBACK(intercept_toggle_Lightpen)
 
 ui_menu_entry_t lightpen_submenu[] = {
     { N_("Enable lightpen emulation"), UI_MENU_TYPE_TICK,
-      (ui_callback_t)intercept_toggle_Lightpen, NULL, NULL, KEYSYM_g, UI_HOTMOD_META },
+      (ui_callback_t)intercept_toggle_Lightpen, NULL, NULL },
     { N_("Lightpen type"), UI_MENU_TYPE_NORMAL,
       NULL, NULL, lightpentype_submenu },
     { NULL }
