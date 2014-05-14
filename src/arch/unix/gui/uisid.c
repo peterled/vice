@@ -68,7 +68,8 @@ ui_menu_entry_t sid_model_submenu[] = {
 #ifdef HAVE_RESID
     { "--", UI_MENU_TYPE_SEPARATOR },
     { "6581 (ReSID)", UI_MENU_TYPE_TICK,
-      (ui_callback_t)radio_SidModel, (ui_callback_data_t)SID_RESID_6581, NULL },
+      (ui_callback_t)radio_SidModel, (ui_callback_data_t)SID_RESID_6581, NULL,
+      KEYSYM_AMP, UI_HOTMOD_META },
     { "8580 (ReSID)", UI_MENU_TYPE_TICK,
       (ui_callback_t)radio_SidModel, (ui_callback_data_t)SID_RESID_8580, NULL },
     { N_("8580 + digi boost (ReSID)"), UI_MENU_TYPE_TICK,
