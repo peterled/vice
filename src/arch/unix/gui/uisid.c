@@ -71,7 +71,8 @@ ui_menu_entry_t sid_model_submenu[] = {
       (ui_callback_t)radio_SidModel, (ui_callback_data_t)SID_RESID_6581, NULL,
       KEYSYM_AMP, UI_HOTMOD_META },
     { "8580 (ReSID)", UI_MENU_TYPE_TICK,
-      (ui_callback_t)radio_SidModel, (ui_callback_data_t)SID_RESID_8580, NULL },
+      (ui_callback_t)radio_SidModel, (ui_callback_data_t)SID_RESID_8580, NULL,
+      KEYSYM_PARL, UI_HOTMOD_META },
     { N_("8580 + digi boost (ReSID)"), UI_MENU_TYPE_TICK,
       (ui_callback_t)radio_SidModel, (ui_callback_data_t)SID_RESID_8580D, NULL },
 #endif
