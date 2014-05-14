@@ -143,7 +143,7 @@ static ui_menu_entry_t set_sound_outmode_submenu[] = {
 
 ui_menu_entry_t sound_settings_submenu[] = {
     { N_("Enable sound playback"), UI_MENU_TYPE_TICK,
-      (ui_callback_t)toggle_Sound, NULL, NULL },
+      (ui_callback_t)toggle_Sound, NULL, NULL, KEYSYM_m, UI_HOTMOD_META },
     { "--", UI_MENU_TYPE_SEPARATOR },
       /* Do not change position as position 2 is hard coded. */
     { N_("Sound device name"), UI_MENU_TYPE_NORMAL,
